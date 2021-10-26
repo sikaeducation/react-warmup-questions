@@ -1,4 +1,4 @@
-* What does `{}` do in JSX?
+## What does `{}` do in JSX?
 
 Insert JS into JSX elements
 
@@ -17,7 +17,7 @@ const SomeComponent = () => {
 }
 ```
 
-* What's wrong with this JSX: `<img src="{imageUrl}" alt="descriptive text" />`?
+## What's wrong with this JSX: `<img src="{imageUrl}" alt="descriptive text" />`?
 
 ```jsx
 const fileName = "puppy"
@@ -26,7 +26,7 @@ const imageUrl = `${fileName}.jpg`
 const someImage = <img src={imageUrl} alt="descriptive text" />
 ```
 
-* How you do you include a component in a JSX template?
+## How you do you include a component in a JSX template?
 
 ```jsx
 import SomeComponent from "./SomeComponent"
@@ -40,12 +40,15 @@ const SomeOtherComponent = () => {
 }
 ```
 
-* What is a prop?
-  * Short for property
-  * Property of the component (HTML has attributes)
-  * To pass values to a component
-* What is the syntax for giving a component a prop?
-* What is the syntax for receiving a prop from a component?
+## What is a prop?
+
+## What is the syntax for giving a component a prop?
+
+## What is the syntax for receiving a prop from a component?
+
+* Short for property
+* Property of the component (HTML has attributes)
+* To pass values to a component
 
 ```jsx
 import Modal from "./Modal"
@@ -71,7 +74,7 @@ const Modal = ({ content, name } ) => {
 ```
 
 
-* What is the purpose of destructuring?
+## What is the purpose of destructuring?
 
 Create less variables and less code to write
 
@@ -106,9 +109,9 @@ const Modal = (props) => {
 }
 ```
 
-* How do you export a module from a file?
+## How do you export a module from a file?
 
-```
+```jsx
 export default SomeComponent
 
 export const methodOne = function(){}
@@ -119,7 +122,7 @@ import {useState, useEffect} from "react"
 import SomeComponent, { methodOne, methodTwo } from "./SomeComponent"
 ```
 
-* When does an arrow function need to wrap its parameters in parentheses?
+## When does an arrow function need to wrap its parameters in parentheses?
 
 * No parameter
 * More than one parameter
@@ -130,11 +133,11 @@ const someOtherFunction = oneParameter => {}
 const yetAnotherFunction = (oneParameter, twoParameter) => {}
 ```
 
-* When can an arrow function wrap its parameters in parentheses?
+## When can an arrow function wrap its parameters in parentheses?
 
 Anytime!
 
-* What is a ternary expression?
+## What is a ternary expression?
 
 * Three arguments, separated by ? and :
 * Different way to write if/else
@@ -172,7 +175,7 @@ const SomeComponent = ({ isSunny, isWarm }) => {
 }
 ```
 
-* What is spreading?
+## What is spreading?
 
 `...`
 
@@ -205,10 +208,13 @@ const someCombinedObject = {
 const someCombinedObject = "hi" // Error!
 ```
 
-* What are keys used for in JSX?
-  * Specific to arrays
-  * Provide a unique identifier!
-* Why can't indexes be used as keys in JSX?
+## What are keys used for in JSX?
+## Why can't indexes be used as keys in JSX?
+
+* Specific to arrays
+* Provide a unique identifier!
+
+## How do you turn a list of items into a list of JSX elements?
 
 ```js
 const someNumbers = [1, 2, 3]
@@ -245,7 +251,6 @@ const DogsList = () => {
   )
 }
 ```
-* How do you turn a list of items into a list of JSX elements?
 
 ```jsx
 <ul>
