@@ -1,5 +1,31 @@
 * What does `{}` do in JSX?
+
+Insert JS into JSX elements
+
+```jsx
+const SomeComponent = () => {
+  const someArray = ["a", "b", "c"]
+  return (
+    <ul>
+      {
+        someArray.map(someItem => (
+          <li>{someItem}</li>
+        ))
+      }
+    </ul>
+  )
+}
+```
+
 * What's wrong with this JSX: `<img src="{imageUrl}" alt="descriptive text" />`?
+
+```jsx
+const fileName = "puppy"
+const imageUrl = `${fileName}.jpg`
+
+const someImage = <img src={imageUrl} alt="descriptive text" />
+```
+
 * How you do you include a component in a JSX template?
 * What is a prop?
 * What is the syntax for giving a component a prop?
